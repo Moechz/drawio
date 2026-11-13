@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "drawiodocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io 是浏览器里的全能绘图工具：流程图、网络拓扑、UML、线框图、组织架构图都能画，内置大量图形库，可导出 PNG/SVG/PDF。它完全跑在你的 NAS 上，不需要账号、不追踪、不依赖云服务；图表保存在浏览器本地或你导出的文件里。"
+release_note = "1. 首个版本：基于 Docker Hub 的 Draw.io 32.6.10，以非 root 容器运行。完整绘图编辑器，内置图形库并支持 PNG/SVG/PDF 导出；服务端不保存任何文档。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面即可绘图——图表保存在浏览器本地存储和你导出的文件里，重要图表请及时导出或使用「文件 > 另存为」。整个过程不涉及账号、云存储或服务端文档库。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io 是瀏覽器裡的全能繪圖工具：流程圖、網路拓撲、UML、線框圖、組織架構圖都能畫，內建大量圖形庫，可匯出 PNG/SVG/PDF。它完全跑在你的 NAS 上，不需要帳號、不追蹤、不依賴雲端服務；圖表保存在瀏覽器本地或你匯出的檔案裡。"
+release_note = "1. 首個版本：基於 Docker Hub 的 Draw.io 32.6.10，以非 root 容器運行。完整繪圖編輯器，內建圖形庫並支援 PNG/SVG/PDF 匯出；伺服器端不保存任何文件。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面即可繪圖——圖表保存在瀏覽器本地儲存和你匯出的檔案裡，重要圖表請及時匯出或使用「檔案 > 另存為」。整個過程不涉及帳號、雲端儲存或伺服器端文件庫。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "Draw.io"
+auth         = "jgraph"
+version      = "@@VERSION@@"
+descript     = "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export."
+release_note = "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+

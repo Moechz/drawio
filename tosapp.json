@@ -1,0 +1,107 @@
+{
+  "app_id": "drawiodocker",
+  "title": "Draw.io",
+  "image": "jgraph/drawio:32.6.10",
+  "repo_name": "drawio",
+  "mode": "plain",
+  "container_port": 8080,
+  "category": [
+    "Web_Services"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/drawiodocker/data",
+      "container": "/data"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "jgraph",
+  "upstream_url": "https://github.com/jgraph/drawio",
+  "upstream_license": "Apache-2.0",
+  "descript": "Draw.io is a full-featured diagram editor in the browser: flowcharts, network diagrams, UML, wireframes and org charts, with a large shape library and export to PNG/SVG/PDF. It runs entirely on your NAS with no account, no tracking and no cloud dependency; your diagrams stay in your browser or in the files you export.",
+  "release_note": "1. First release: Draw.io 32.6.10 from Docker Hub as a non-root container. Complete diagram editor with shape libraries and PNG/SVG/PDF export; nothing is stored server-side.",
+  "important": "Requires DockerEngine (installed automatically if missing). Open the web UI and start drawing - diagrams are kept in the browser's local storage and in the files you export, so export important ones or use File > Save as. No account, no cloud storage and no server-side document store is involved. The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+  "probe": {
+    "user_in_image": "tomcat",
+    "entrypoint": [
+      "/docker-entrypoint.sh"
+    ],
+    "cmd": [
+      "catalina.sh",
+      "run"
+    ],
+    "exposed_ports": [
+      8080,
+      8443
+    ],
+    "declared_volumes": [],
+    "image_healthcheck": [],
+    "digest": "jgraph/drawio@sha256:b2dfa027e7878a4a1124f38d8fc6d257526f8d77fccf6c423189fc27ae931737",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "200",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "let engine: [Apache Tomcat/9.0.123]\n13-Nov-2026 17:55:42.007 SEVERE [main] org.apache.catalina.startup.HostConfig.beforeStart Unable to create directory for deployment: [/usr/local/tomcat/conf/Catalina/localhost]\n13-Nov-2026 17:55:43.025 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.\n13-Nov-2026 17:55:43.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/draw]\n13-Nov-2026 17:55:43.468 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.\n13-Nov-2026 17:55:43.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/draw] has finished in [351] ms\n13-Nov-2026 17:55:43.492 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [\"http-nio-8080\"]\n13-Nov-2026 17:55:43.531 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1654] milliseconds",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "jgraph",
+      "repo": "docker-drawio",
+      "description": "Dockerized draw.io based on whichever is the most secure image at the time.",
+      "license": "GPL-3.0",
+      "homepage": ""
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:8080/ || exit 1"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "drawiodocker",
+  "github_repo": "drawio",
+  "upstream_version": "32.6.10",
+  "release_tag_prefix": "v",
+  "version": "32.6.10-1",
+  "help": "https://github.com/Moechz/drawio/issues",
+  "official": "https://github.com/jgraph/drawio",
+  "license": "Apache-2.0",
+  "docker_socket": false,
+  "group_add": [],
+  "healthcheck_start_period": "60s",
+  "translations": {
+    "zh-cn": {
+      "descript": "Draw.io 是浏览器里的全能绘图工具：流程图、网络拓扑、UML、线框图、组织架构图都能画，内置大量图形库，可导出 PNG/SVG/PDF。它完全跑在你的 NAS 上，不需要账号、不追踪、不依赖云服务；图表保存在浏览器本地或你导出的文件里。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面即可绘图——图表保存在浏览器本地存储和你导出的文件里，重要图表请及时导出或使用「文件 > 另存为」。整个过程不涉及账号、云存储或服务端文档库。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。",
+      "release_note": "1. 首个版本：基于 Docker Hub 的 Draw.io 32.6.10，以非 root 容器运行。完整绘图编辑器，内置图形库并支持 PNG/SVG/PDF 导出；服务端不保存任何文档。"
+    },
+    "zh-hk": {
+      "descript": "Draw.io 是瀏覽器裡的全能繪圖工具：流程圖、網路拓撲、UML、線框圖、組織架構圖都能畫，內建大量圖形庫，可匯出 PNG/SVG/PDF。它完全跑在你的 NAS 上，不需要帳號、不追蹤、不依賴雲端服務；圖表保存在瀏覽器本地或你匯出的檔案裡。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面即可繪圖——圖表保存在瀏覽器本地儲存和你匯出的檔案裡，重要圖表請及時匯出或使用「檔案 > 另存為」。整個過程不涉及帳號、雲端儲存或伺服器端文件庫。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。",
+      "release_note": "1. 首個版本：基於 Docker Hub 的 Draw.io 32.6.10，以非 root 容器運行。完整繪圖編輯器，內建圖形庫並支援 PNG/SVG/PDF 匯出；伺服器端不保存任何文件。"
+    }
+  },
+  "data_notes": "Draw.io keeps no documents on the server: the `/data` mount is reserved for the image's optional runtime files, and diagrams live in the browser's local storage or in the files you export.",
+  "design_notes": [
+    "**Runs as uid 1000.** The image's default `tomcat` user already matches the TOS application user, so no wrapper is needed.",
+    "**Stateless by design.** There is no server-side document store; the app is a static editor plus export."
+  ],
+  "limitations": [
+    "- Diagrams are stored in the browser (local storage) or in exported files - the server keeps no copy.",
+    "- The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+    "- Real-time collaboration and cloud-storage integrations need extra services that this package does not bundle."
+  ],
+  "host_port": 8031
+}
